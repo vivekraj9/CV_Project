@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Transformation</title>
+</head>
+<body>
+    <h1>Upload an Image and Apply Transformations</h1>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <label for="image">Choose Image:</label>
+        <input type="file" id="image" name="image" required><br><br>
+        
+        <h3>Select Transformations:</h3>
+        <input type="checkbox" name="transformations" value="translate"> Translate<br>
+        <input type="checkbox" name="transformations" value="rotate"> Rotate<br>
+        <input type="checkbox" name="transformations" value="scale"> Scale<br>
+        <input type="checkbox" name="transformations" value="shear"> Shear<br>
+        <input type="checkbox" name="transformations" value="flip"> Flip<br>
+        <input type="checkbox" name="transformations" value="crop"> Crop<br>
+        <input type="checkbox" name="transformations" value="perspective"> Perspective<br><br>
+        
+        <button type="submit">Apply Transformations</button>
+    </form>
+</body>
+</html>
